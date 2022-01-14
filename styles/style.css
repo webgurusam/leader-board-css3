@@ -55,6 +55,7 @@ hr{
 /* ---------------------------------
     top blogs styles
 ----------------------------- */
+
 .top-blogs .section-title{
     margin: 27px 0 31px;
 }
@@ -87,3 +88,110 @@ hr{
     text-decoration: none;
     color: #562EFF;
 }
+
+/* ------------------------------
+    courses styles
+------------------------- */
+#ltc{
+    margin: -7px 0 11px;
+}
+.latest-courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 23px;
+}
+#tab-course{
+    display: none;
+}
+.single-course{
+    width: 224px;
+    padding: 14px 16px 16px 12px;
+    box-shadow: 0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+}
+.single-course .course-banner img{
+    width: 224px;
+    height: 104px;
+    vertical-align: middle;
+}
+.course-detail{
+    font-size: 20px;
+    font-weight: 500;
+    color: #1E1E1E;
+}
+.course-title{
+    color: #1E1E1E;
+    font-size: 20px;
+}
+.course-title{
+    margin: 15px 0 0;
+}
+.course-detail .course-author{
+    font-size: 15px;
+    color: #ED6B4F;
+    margin: 5px 0 12px;
+}
+.course-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.course-info div .rating-point{
+    color: #A2A2A2;
+    font-size: 14px;
+}
+.course-duration{
+    background-color: #FEE5DF;
+    border-radius: 15px;
+    color: #ED6B4F;
+    padding: 5px 6px;
+}
+.course-duration span{
+    font-size: 14px;
+}
+.fa-star{
+    font-size: 12px;
+}
+.fa-star.filled{
+    color: #FFC014;
+}
+.fa-star.empty{
+    color: #AEAEAE;
+}
+
+/* --------------------------------------
+    Media Queries
+--------------------------------- */
+
+/* Mobile Devices */
+@media only screen and (max-width: 767px) {
+    .container{
+        width: 100%;
+    }
+    .players, .blogs, .latest-courses{
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+    .single-player, .single-blog{
+        flex-direction: column;
+    }
+    .single-blog{
+        align-items: center;
+    }
+}
+/* Tablet Devices */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .container{
+        width: 100%;
+    }
+    .players, .latest-courses{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #tab-course{
+        display: block;
+    }
+}
+
+
+
+
