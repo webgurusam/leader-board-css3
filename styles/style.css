@@ -89,3 +89,69 @@ hr {
     text-decoration: none;
     color: #562EFF;
 }
+
+/*-----------------------
+    latest courses banner
+----------------------------*/
+.latest-course {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.single-course {
+    width: 224px;
+    min-height: 239px;
+    padding: 14px 16px 16px 12px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 15px 10px #d1d1d13f;
+}
+
+.latest-course .course-banner img {
+    width: 224px;
+    height: 104px;
+}
+
+.course-detail .course-title {
+    color: #1E1E1E;
+    font-size: 18px;
+    margin: 20px 0 7px 0;
+}
+
+.course-author {
+    font-size: 15px;
+    color: #ED6B4F;
+    margin: 0;
+}
+
+.course-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.course-info span {
+    color: #A2A2A2;
+    font-size: 15px;
+}
+
+.course-duration {
+    background-color: #FFE4E8;
+    border-radius: 15px;
+    padding: 5px;
+    font-size: 15px;
+    color: #FF4A60;
+    cursor: pointer;
+}
+
+.fa-star {
+    font-size: 12px;
+}
+
+.fa-star.empty {
+    font-size: 12px;
+    color: #AEAEAE;
+}
+
+.fa-star.filled {
+    color: #FFC014;
+}
