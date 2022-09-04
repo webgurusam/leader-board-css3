@@ -155,3 +155,54 @@ hr {
 .fa-star.filled {
     color: #FFC014;
 }
+
+/*-----------------
+    Media Queries
+---------------------*/
+
+/* Mobile Device */
+
+@media only screen and (max-width: 688px) {
+    .container {
+        width: 100%;
+    }
+
+    .players,
+    .blogs,
+    .latest-course {
+        grid-template-columns: none;
+        justify-content: center;
+        row-gap: 20px;
+    }
+
+    .single-player,
+    .single-blog {
+        flex-direction: column;
+    }
+
+    .single-blog {
+        align-items: center;
+    }
+
+
+}
+
+/* Tab, iPads Device */
+
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+    .container {
+        width: 100%;
+    }
+
+    .players,
+    .blogs,
+    .latest-course {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .latest-course {
+        row-gap: 30px;
+    }
+
+
+}
